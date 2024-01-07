@@ -13,9 +13,9 @@ cnn_model = load_model(model_path)
 
 # Define a dictionary with image options and their corresponding file paths
 image_options = {
-    'Image 1': r'C:\Users\anand\PRJCTS\sem3_pro\DTSTINC\yes1\C33P1thinF_IMG_20150619_114756a_cell_179.png',
-    'Image 2': r'C:\Users\anand\PRJCTS\sem3_pro\DTSTINC\yes1\C39P4thinF_original_IMG_20150622_105102_cell_83.png',
-    'Image 3': r'C:\Users\anand\PRJCTS\sem3_pro\DTSTINC\no1\C1_thinF_IMG_20150604_104722_cell_9.png',
+    'Image 1': 'C33P1thinF_IMG_20150619_114756a_cell_179.png',
+    'Image 2': 'C39P4thinF_original_IMG_20150622_105102_cell_83.png',
+    'Image 3': 'C1_thinF_IMG_20150604_104722_cell_9.png',
     # Add more images as needed
 }
 
