@@ -1,6 +1,7 @@
 tensorflow
 numpy
 pillow
-gdown
-torch
 os
+PIL
+mlxtend
+scikit-learn
