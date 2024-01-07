@@ -79,12 +79,14 @@ if uploaded_image is not None:
     st.subheader("Uploaded Image:")
     st.image(uploaded_image, caption="Uploaded Image.", use_column_width=False, width=200)
     st.write("")
+    img=uploaded_image
+    img=Image.open(img)
 
 def cnn_make_prediction(img, cnn_model):
     img = img.resize((128, 128))
     img = np.array(img)
     input_img = np.expand_dims(img, axis=0)
-    res = cnn_model.predict(input_img)
+    res =(cnn_model.predict(input_img) > 0.5).astype("int32")
     if res:
         return "Parasitized"
     else:
