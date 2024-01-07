@@ -1,7 +1,6 @@
 tensorflow
 numpy
 pillow
-os
 PIL
 mlxtend
 scikit-learn
